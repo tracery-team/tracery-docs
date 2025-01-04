@@ -1,0 +1,959 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/git-and-github/">
+      
+      
+        <link rel="prev" href="../code-style/">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Git and Github - Tracery Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#git-and-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Tracery Documentation" class="md-header__button md-logo" aria-label="Tracery Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracery Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Git and Github
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Tracery Documentation" class="md-nav__button md-logo" aria-label="Tracery Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tracery Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-style/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Style
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Git and Github
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Git and Github
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcetree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sourcetree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitGraph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use Git?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use Git?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-of-most-popular-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of most popular commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-changes-from-other-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using changes from other branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-gitignore-or-not-to-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      To .gitignore or not to .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conventional Commits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-and-intuitive-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clear and Intuitive Collaboration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clear and Intuitive Collaboration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#our-plan-of-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our plan of work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      Getting Started
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git" class="md-nav__link">
+    <span class="md-ellipsis">
+      Git
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#github-desktop" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitHub Desktop
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sourcetree" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sourcetree
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitgraph" class="md-nav__link">
+    <span class="md-ellipsis">
+      GitGraph
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-git" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use Git?
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to use Git?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-of-most-popular-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of most popular commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#popular-scenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Popular scenarios
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Popular scenarios">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#adding-a-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding a feature
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#downloading-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Downloading Changes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-changes-from-other-branches" class="md-nav__link">
+    <span class="md-ellipsis">
+      Using changes from other branches
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-gitignore-or-not-to-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      To .gitignore or not to .gitignore
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conventional Commits
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clear-and-intuitive-collaboration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clear and Intuitive Collaboration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Clear and Intuitive Collaboration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#our-plan-of-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Our plan of work
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="git-and-github">Git and Github</h1>
+<p>Github is the central part of our
+collaboration. Our application source code
+is hosted under the single organization called
+<a href="https://github.com/tracery-team">Tracery Team</a>.</p>
+<p>We have 3 main repositories:</p>
+<ol>
+<li><a href="https://github.com/tracery-team/tracery-docs">Documentation</a></li>
+<li><a href="https://github.com/tracery-team/tracery-frontend">Front-End</a></li>
+<li><a href="https://github.com/tracery-team/tracery-backend">Back-End</a></li>
+</ol>
+<h2 id="getting-started">Getting Started</h2>
+<h3 id="git">Git</h3>
+<p>First of all, you need to install Git itself.
+You can run the following command to check whether
+you have it installed on your system:</p>
+<pre><code class="language-sh">git --version
+</code></pre>
+<p>if git is not found, then follow <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">these</a> instructions</p>
+<p>Git is the only obligatory program. And if you are
+using modern IDEs, only Git should be enough. Many of
+modern IDEs have a good Git integration. So, I encourage you
+to use the WebStorm JetBrains product. It will help you
+to track your Git history, pull changes from the remote,
+and resolve conflicts.</p>
+<p>JetBrains offers free licenses for students,
+so you should figure out how to get one.
+I got mine from <a href="https://education.github.com/pack">GitHub Education pack</a>.
+You can get WebStorm here: <a href="https://www.jetbrains.com/webstorm/">Download Link</a></p>
+<p><a href="https://code.visualstudio.com/">VSCode</a> is another option. You will have to 
+spend more time installing plugins, so when you install the IDE itself, search
+for Git plugins available on the Extension marketplace.</p>
+<p>However, there are still some useful programs
+that you may consider installing:</p>
+<h3 id="github-desktop">GitHub Desktop</h3>
+<p>I personally don't use it, but this tool
+may simplify the git and github workflow for you.
+Here you can download it: <a href="https://github.com/apps/desktop">Download Link</a></p>
+<h3 id="sourcetree">Sourcetree</h3>
+<p>Again, I personally don't use it, but
+Sourcetree shows you a beautiful graph
+of branches and commits. Sometimes it helps
+in understanding what's going on in the
+repository. Pretty nice program. 
+You can install it here: <a href="https://www.sourcetreeapp.com/">Download Link</a></p>
+<h3 id="gitgraph">GitGraph</h3>
+<p>I indeed use it. Console application 
+that shows you beautiful Git branch&amp;commit
+graphs. You can install it here: <a href="https://github.com/mlange-42/git-graph">Download Link</a></p>
+<h2 id="how-to-use-git">How to use Git?</h2>
+<p>My personal advice: use git + gitgraph from command line,
+and your IDE for conflicts resolution. All other tools
+introduce unnecessary complexity. Command-line Git
+itself is simple enough, and you don't need any other
+programs to be successful.</p>
+<h3 id="list-of-most-popular-commands">List of most popular commands</h3>
+<p>Here is the list of commands that you will be using:</p>
+<pre><code class="language-sh"># To download a repository locally
+git clone https://github.com/tracery-team/{repository}
+
+# Switch to git branch of your need
+git checkout &lt;branch&gt;
+
+# Check what has changed on GitHub - maybe someone added a new branch
+git fetch
+
+# Apply changes on GitHub to your current branch
+git pull
+
+# Check the status of your changes
+git status
+
+# See the changes (it will show you the changes in code)
+git diff
+
+# Add files to staging area - before commit
+git add . # all files
+git add src/* # only needed files
+
+# Commit changes - adds a comit to your history
+git commit -m &quot;feat(Header): added styling&quot;
+
+# Before commit, you may want to delete some file
+# from staging area, if you don't want to share it
+git rm &lt;file&gt;
+
+# Post your changes on GitHub
+git push
+
+# Discard changes, rollback to the last commit
+git stash
+
+# If you messed up something, rollback to any commit
+git reset --hard &lt;commit&gt;
+
+# If you want to apply changes from another branch, do
+git merge &lt;branch&gt;
+</code></pre>
+<h3 id="popular-scenarios">Popular scenarios</h3>
+<h4 id="adding-a-feature">Adding a feature</h4>
+<pre><code class="language-sh"># You created a new issue on github with a branch
+# and you need to work on something using that branch
+
+# Get the remote changes from github
+git fetch
+git checkout feature-branch
+
+# Now you are on the feature-branch
+
+# Coding...
+# Coding...
+
+# Check what you did:
+git status
+git diff
+
+# Add your changes to staging area:
+git add src/my-feature/*
+
+# Check whether everything is OK:
+git status
+
+# Committing changes:
+git commit -m &quot;feat(src/my-feature): added a feature&quot;
+
+# Let everybody know about your changes,
+# publish them online on GitHub:
+git push
+</code></pre>
+<h4 id="downloading-changes">Downloading Changes</h4>
+<pre><code class="language-sh"># Imagine somebody did the previous scenario,
+# and then merged their changes to `main` branch.
+# You have an old `main` branch locally,
+# and you would like to update it
+
+# First of all, check whether
+# you have any remote changes
+git fetch
+
+# Normally it will show you
+# what has changed remotely
+
+# Now, you need to switch to your
+# main branch
+git checkout main
+
+# Update the main branch
+git pull
+
+# Now you have an up-to-date main branch
+</code></pre>
+<h4 id="using-changes-from-other-branches">Using changes from other branches</h4>
+<pre><code class="language-sh"># Imagine that someone is working on a branch
+# called feature-2. They implemented things that you
+# wish you had on your branch
+
+# merge their branch into your current branch
+git merge feature-2
+
+# Oh no! There are some conflicts.
+# Resolve the conflicts using your IDE
+
+# Continue the merge
+git merge --continue
+</code></pre>
+<h2 id="to-gitignore-or-not-to-gitignore">To .gitignore or not to .gitignore</h2>
+<p>Some files <strong><em>should not be tracked</em></strong> by git.
+They should nor be present in your local history,
+neither on GitHub.</p>
+<p>This includes:</p>
+<ol>
+<li>Environment variables files like .env, .env.runtime, etc.</li>
+<li>Files created by your IDE, like .idea, .vscode, etc.</li>
+<li>Files created by your programming platform, like node_modules</li>
+<li>Files created by your operating system, like .DS_Store</li>
+<li>Cache files</li>
+</ol>
+<p>And many, many more. The reason we don't want them
+to be on our version control system could be one of the following:</p>
+<ol>
+<li>They are large (node_modules can contain hundreds of megabytes)</li>
+<li>They contain sensitive data (like .env files, where you put passwords and API keys)</li>
+<li>They are unnecessary (everybody uses a different IDE, so why should we have your IDE files in our repo?)</li>
+<li>They may lead to inconsistencies</li>
+</ol>
+<p>There are two ways to deal with those files:</p>
+<ol>
+<li>Add them to .gitignore (<strong><em>the preferred way</em></strong>)</li>
+<li>Not adding them to staging area before commit: they will be excluded from commmit</li>
+</ol>
+<h2 id="conventional-commits">Conventional Commits</h2>
+<p>When you do a commit, you can <strong><em>and must</em></strong> attach a message using <em>-m</em> flag.
+However, without proper rules on <strong><em>how to write</em></strong> your commit messages,
+they will quickly become pretty random.</p>
+<p>And here come the Conventional Commits
+You can read about them <a href="https://www.conventionalcommits.org/en/v1.0.0/">here</a>.
+To put it shortly, it's a convention that tells you how to
+properly write commit messages</p>
+<p>Bad commit messages:</p>
+<ol>
+<li>small changes</li>
+<li>fixed the bug</li>
+<li>added styling</li>
+<li>commit commit</li>
+</ol>
+<p>Good commit messages:</p>
+<ol>
+<li>feat(footer): changed application footer</li>
+<li>fix(navigation): removed dead links from the navigation</li>
+<li>docs(src/components/CronPicker): added documentation for arguments</li>
+</ol>
+<h2 id="clear-and-intuitive-collaboration">Clear and Intuitive Collaboration</h2>
+<p>There are best practices on how to work
+on a project together.</p>
+<p>Imagine if everybody was using the same branch.
+You make changes, you commit, you push... and boom!
+You get a notification that your branches are <strong><em>divergent</em></strong>.
+What could happen:</p>
+<ol>
+<li>Last commit on <code>main</code> branch is <code>A</code></li>
+<li>You and Mateusz simultaneously start working on that branch</li>
+<li>Mateusz finishes first, he commits his changes as commit <code>B</code>
+and immediately pushes it to GitHub</li>
+<li>Remotely, <code>main</code> branch has a history of <code>A -&gt; B</code></li>
+<li>You finish your changes and commit them as commit <code>C</code></li>
+<li>Your local history of <code>main</code> looks like <code>A -&gt; C</code></li>
+<li>When you push it to GitHub, it gets confused on what happened:
+how to treat the fact that you dont have the <code>B</code> commit?</li>
+</ol>
+<p>Even when working in a pair, bad git practices can lead to
+serious consequences.
+So, people invented something which is called 
+<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow</a>:
+a tool and a set of rules that tells you how to organize your git
+collaboration on a project.</p>
+<p>We won't use Gitflow, but we will have some rules
+on how we work with our repositories,
+so we won't have to resolve divergent branches and merge conflicts.</p>
+<h3 id="our-plan-of-work">Our plan of work</h3>
+<ol>
+<li>We need a feature. I, as a team leader, create an Issue on Github,
+assign some priority to this issue, and assign a person responsible for
+this issue.</li>
+<li>You, the person assigned to the issue, go to GitHub,
+click 'Create branch for the issue', git fetch &amp; git checkout to
+that branch locally, and start working on that feature on your
+separate branch</li>
+<li><strong><em>This is YOUR branch, and noone should modify it except
+of you!</em></strong> Only one person is working per branch.</li>
+<li>After you've done with your feature, you merge the <code>main</code> branch
+to your branch, and resolve conflicts</li>
+<li>After the conflicts are resolved, you create a <strong><em>Pull Request</em></strong> on GitHub</li>
+<li>I check the PR, and make a code review. You change the code if
+it doesn't meet the criteria</li>
+<li>When I assume that the code is good enough, I merge your PR to the <code>main</code> branch</li>
+<li><strong><em>You should NEVER modify the main branch, we are only merging to it.</em></strong>
+Want to add a feature? Create a separate Issue and a branch for that issue!</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
