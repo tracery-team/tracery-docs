@@ -1,0 +1,871 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/code-style/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Code Style - Tracery Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#code-style" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Tracery Documentation" class="md-header__button md-logo" aria-label="Tracery Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tracery Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Code Style
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Tracery Documentation" class="md-nav__button md-logo" aria-label="Tracery Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tracery Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome!
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Code Style
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Code Style
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pascalcase-is-the-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      PascalCase is the way
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-size-is-2-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tab size is 2 spaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-semicolons-unless-really-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use semicolons (unless really needed)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-not-to-omit-brackets-in-compound-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try not to omit brackets in compound statements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embrace-single-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embrace single quotes:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-write-long-lines-split-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't write long lines. Split them!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-trailing-commas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use trailing commas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-arrow-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use arrow functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-typescript-to-infer-types-when-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allow TypeScript to infer types when possible
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-any" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use any
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-typescript-enums-and-namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use TypeScript enums and namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-typescript-const-enums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use TypeScript const enums
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-interfaces-use-types-instead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use interfaces, use types instead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-about-the-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ask about the rest
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pascalcase-is-the-way" class="md-nav__link">
+    <span class="md-ellipsis">
+      PascalCase is the way
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tab-size-is-2-spaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tab size is 2 spaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-semicolons-unless-really-needed" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use semicolons (unless really needed)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#try-not-to-omit-brackets-in-compound-statements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Try not to omit brackets in compound statements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#embrace-single-quotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Embrace single quotes:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-write-long-lines-split-them" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't write long lines. Split them!
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-trailing-commas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use trailing commas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-arrow-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use arrow functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#allow-typescript-to-infer-types-when-possible" class="md-nav__link">
+    <span class="md-ellipsis">
+      Allow TypeScript to infer types when possible
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-any" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use any
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-typescript-enums-and-namespaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use TypeScript enums and namespaces
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-typescript-const-enums" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use TypeScript const enums
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dont-use-interfaces-use-types-instead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Don't use interfaces, use types instead
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ask-about-the-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ask about the rest
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="code-style">Code Style</h1>
+<p>Here is the guide how to properly write
+your TypeScript code. It doesn't cover
+the best practises of libraries or tools.
+To learn more about, let's say, React, go to
+<a href="library-react.md">the proper</a> section.</p>
+<h2 id="pascalcase-is-the-way">PascalCase is the way</h2>
+<p><strong><em>Always</em></strong> use 1. PascalCase for classes or 2. pascalCase for everything else</p>
+<pre><code class="language-ts">class HumanManager { // Here PascalCase
+  constructor (
+    private readonly name: string,
+    private readonly surname: string,
+  ) {}
+
+  get fullName(): string { // ...and here pascalCase
+    return `${this.name} ${this.surname}`
+  }
+}
+
+// Here, again, pascalCase
+const reallyLongIdentifier = new HumanManager('Mateusz', 'Nowak')
+</code></pre>
+<h2 id="tab-size-is-2-spaces">Tab size is 2 spaces</h2>
+<p>You will deal with deeply nested JSX tags, like:</p>
+<pre><code class="language-tsx">&lt;Container&gt;
+  &lt;Section&gt;
+    &lt;AnotherSection&gt;
+      &lt;SomeComponent /&gt;
+    &lt;/AnotherSection&gt;
+  &lt;/Section&gt;
+&lt;/Container&gt;
+</code></pre>
+<p>having tab size being equal to 4 spaces
+makes your code less readable. Tab size of 2
+makes code more compact, therefore much
+more readable</p>
+<h2 id="dont-use-semicolons-unless-really-needed">Don't use semicolons (unless really needed)</h2>
+<pre><code class="language-ts">const a = 1
+const b = 2
+console.log(a + b)
+</code></pre>
+<p>TypeScript compiles down to JavaScript with
+automatically inserted semicolons. In some <strong><em>rare</em></strong> cases,
+however, they are necessary, and only then they should
+be inserted. If you see red errors around [] or (),
+try inserting a semicolon</p>
+<h2 id="try-not-to-omit-brackets-in-compound-statements">Try not to omit brackets in compound statements</h2>
+<pre><code class="language-ts">// Bad
+if (something)
+  doSomething()
+
+// Good
+if (something) {
+  doSomething()
+}
+</code></pre>
+<h2 id="embrace-single-quotes">Embrace single quotes:</h2>
+<pre><code class="language-ts">import { React } from 'react'
+import { css } from 'styled-components'
+</code></pre>
+<p>They are faster to type. It will be a standard
+preference for our codebase. Use double quotes
+only when the string contains a single quote:</p>
+<pre><code class="language-ts">const quotedString = &quot;'Mateusz'&quot;
+</code></pre>
+<h2 id="dont-write-long-lines-split-them">Don't write long lines. Split them!</h2>
+<pre><code class="language-tsx">// Bad
+const measurement = measureVelocity(valueA, valueB, valueC, valueD, valueE)
+
+// Good
+const measurement = measureVelocity(
+  valueA,
+  valueB,
+  valueC,
+  valueD,
+  valueE,
+)
+
+// Bad
+&lt;MyComponent propA={{ ...something }} propB={10.0} propC /&gt;
+
+// Good
+&lt;MyComponent
+  propA={
+    ...something,
+  }}
+  propB={10.0}
+  propC
+/&gt;
+</code></pre>
+<h2 id="use-trailing-commas">Use trailing commas</h2>
+<p>JavaScript allows you to have
+trailing commas in function calls,
+objects and arrays</p>
+<pre><code class="language-ts">const schema = {
+  type: 'post',
+  payload: {
+    name: 'Mateusz',
+    surname: 'Nowak', // here is trailing comma
+  }, // here is trailing comma
+}
+</code></pre>
+<h2 id="use-arrow-functions">Use arrow functions</h2>
+<p>Arrow functions' behavior is more predictable
+(I am primarily talking about <a href="https://stackoverflow.com/questions/33308121/can-you-bind-this-in-an-arrow-function">this</a>).
+Therefore, when possible, you should use them:</p>
+<pre><code class="language-tsx">
+// an arrow function
+const App = () =&gt; {
+  return (
+    &lt;main&gt;
+      &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;/main&gt;
+  )
+}
+
+// another arrow function
+const add = (a: number, b: number) =&gt; a + b
+
+// you can use them as methods in classes
+class Person {
+  constructor (
+    public readonly name: string,
+    public readonly surname: string,
+  ) {}
+
+  greet = (friend: Person) =&gt; {
+    const greeting = `Hi, ${friend.name}, I am ${this.name}!`
+    console.log(greeting)
+  }
+}
+
+</code></pre>
+<h2 id="allow-typescript-to-infer-types-when-possible">Allow TypeScript to infer types when possible</h2>
+<p>TypeScript type inference works well most of the times.
+In fact, when type inference is possible, TypeScript will
+definitely infer types better than you. So, use types
+only when needed (normally for function arguments)</p>
+<pre><code class="language-ts">// Not needed - TypeScript already knows that a is a string
+const a: string = 'Hello, world' // type of a is 'string'
+
+const a = 'Hello, world!' // type of a is a literal 'Hello, world!'
+                          // the type here is more narrow since TypeScript
+                          // knows that a cannot be changed to
+                          // any other string
+
+// why do you need &quot;: number&quot; in the end?
+const add = (a: number, b: number): number =&gt; a + b
+
+// this one is better: TS already knows 
+// that the function returns a number
+const add = (a: number, b: number) =&gt; a + b
+</code></pre>
+<h2 id="dont-use-any">Don't use any</h2>
+<p>Type 'any' kills the TypeScript type system.
+The moment you introduce 'any' to your codebase,
+you allow bad things to happen. Don't do that.</p>
+<p>Consider reading on the internet how to:</p>
+<ol>
+<li>Use 'unknown' type instead</li>
+<li>Use generics</li>
+<li>Use type guards with validation</li>
+</ol>
+<p>Normally 'any' occurs when you get something
+as a network response. Then, you need to validate
+the response and prove that it has the desired
+type using type guards</p>
+<pre><code class="language-ts">// Example of a type guard validation
+
+type Person = {
+  name: string
+  surname: string
+}
+
+const isPerson = (maybePerson: unknown): maybePerson is Person =&gt; {
+  if (maybePerson === undefined || maybePerson === null) {
+    return false
+  }
+  if (typeof maybePerson !== 'object') {
+    return false
+  }
+  if (typeof maybePerson?.name !== 'string' ||
+      typeof maybePerson?.surname !== 'string) {
+    return false
+  }
+  return true
+}
+
+// in some other place
+const person = await fetchPerson() // type of person is any
+if (isPerson(person)) {
+  // Here TypeScript knows, 
+  // that if isPerson returned true,
+  // type of the person is Person
+  console.log(person.name) // No error
+}
+
+</code></pre>
+<h2 id="dont-use-typescript-enums-and-namespaces">Don't use TypeScript enums and namespaces</h2>
+<p>Instead of enums you can use const enums.
+Namespaces are just a language design mistake,
+nobody uses them, so you shouldn't either</p>
+<h2 id="use-typescript-const-enums">Use TypeScript const enums</h2>
+<p>const enums are quite useful. They are similar to C macroses.
+During compilation, they are turned into just JavaScript literals</p>
+<pre><code class="language-tsx">const enum Status {
+  ON = 'On',
+  OFF = 'Off',
+  UNKNOWN = 'Unknown'
+}
+
+const status = Status.OFF // after compilation,
+                          // it will be just const status = 'Off'
+
+// You can skip literals in const enum definition,
+// then TypeScript will use numbers 0, 1, 2, ...
+const enum Flag {
+  READ,
+  WRITE,
+}
+
+const flag = Flag.READ // after compilation,
+                       // const flag = 0
+</code></pre>
+<h2 id="dont-use-interfaces-use-types-instead">Don't use interfaces, use types instead</h2>
+<blockquote>
+<p><strong><em>Attention</em>!</strong> Both types and interfaces do the same thing! </br>
+  In other languages there may be a distinction between those two.
+  TypeScript, however, is a language with duck typing, therefore
+  each type acts as an interface by default
+</p>
+</blockquote>
+<p>In TypeScript you have two ways of declaring a type:</p>
+<ol>
+<li>Interface declaration</li>
+<li>Type declaration</li>
+</ol>
+<pre><code class="language-tsx">// preferred way
+type User = {
+  name: string
+  surname: string
+}
+
+// Bad - don't use it
+interface User {
+  name: string
+  surname: string
+}
+</code></pre>
+<p>The reason behind this decision is
+the fact that interfaces are quite limited,
+and all their use-cases are covered with
+type definitions.</p>
+<h2 id="ask-about-the-rest">Ask about the rest</h2>
+<p>If you are unsure about something, just
+ask me :)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
