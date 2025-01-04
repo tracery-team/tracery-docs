@@ -1,0 +1,8 @@
+site_name: Tracery Documentation
+site_url: https://tracery-team.github.io/tracery-docs
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
