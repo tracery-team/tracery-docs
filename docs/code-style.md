@@ -1,7 +1,10 @@
 # Code Style
 
 Here is the guide how to properly write
-your TypeScript code.
+your TypeScript code. It doesn't cover
+the best practises of libraries or tools.
+To learn more about, let's say, React, go to
+[the proper](library-react.md) section.
 
 ## PascalCase is the way
 **_Always_** use 1. PascalCase for classes or 2. pascalCase for everything else
@@ -249,4 +252,40 @@ const flag = Flag.READ // after compilation,
                        // const flag = 0
 ```
 
+## Don't use interfaces, use types instead
 
+>
+>   **_Attention_!** Both types and interfaces do the same thing! </br>
+>   In other languages there may be a distinction between those two.
+>   TypeScript, however, is a language with duck typing, therefore
+>   each type acts as an interface by default
+>
+
+In TypeScript you have two ways of declaring a type:
+
+
+1. Interface declaration
+2. Type declaration
+
+```tsx
+// preferred way
+type User = {
+  name: string
+  surname: string
+}
+
+// Bad - don't use it
+interface User {
+  name: string
+  surname: string
+}
+```
+
+The reason behind this decision is
+the fact that interfaces are quite limited,
+and all their use-cases are covered with
+type definitions.
+
+## Ask about the rest
+If you are unsure about something, just
+ask me :)
