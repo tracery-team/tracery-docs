@@ -16,7 +16,7 @@ The documentation tries to address the following
 questions:
 
 1. [Backend documentation](backend.md)
-2. [Frontend documentation](git-and-github.md)
+2. [Frontend documentation](frontend.md)
 
 The information about application modules
 can be found [here](modules.md).
