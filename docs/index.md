@@ -15,10 +15,8 @@ The documentation serves **_two main purposes_**:
 The documentation tries to address the following
 questions:
 
-1. [How to write consistent code in general?](code-style.md)
-2. [How do we collaborate together?](git-and-github.md)
-3. [How to structure my code?](code-structure.md)
-4. [How to use {...} library?](libraries.md)
+1. [Backend documentation](backend.md)
+2. [Frontend documentation](git-and-github.md)
 
-The information about application modules 
+The information about application modules
 can be found [here](modules.md).
