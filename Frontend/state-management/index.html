@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/data/EventEntity/">
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/Frontend/state-management/">
       
       
-        <link rel="prev" href="../EventDTO/">
+        <link rel="prev" href="../routing/">
       
       
-        <link rel="next" href="../UserDTO/">
+        <link rel="next" href="../UI-structure/appbar/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>EventEntity - Tracery Documentation</title>
+        <title>State Management - Tracery Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#evententity" class="md-skip">
+        <a href="#state-management" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EventEntity
+              State Management
             
           </span>
         </div>
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,17 +400,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -425,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Frontend
@@ -439,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/api-integration/" class="md-nav__link">
+      <a href="../api-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/project-structure/" class="md-nav__link">
+      <a href="../project-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -505,7 +507,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/routing/" class="md-nav__link">
+      <a href="../routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -524,10 +526,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Frontend/state-management/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    State Management
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -537,6 +560,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt-token-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      JWT Token Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JWT Token Management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#usejwtts" class="md-nav__link">
+    <span class="md-ellipsis">
+      useJWT.ts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -585,7 +661,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/appbar/" class="md-nav__link">
+      <a href="../UI-structure/appbar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +683,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/event-info/" class="md-nav__link">
+      <a href="../UI-structure/event-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +705,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/login-page/" class="md-nav__link">
+      <a href="../UI-structure/login-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/main-page/" class="md-nav__link">
+      <a href="../UI-structure/main-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/routing/" class="md-nav__link">
+      <a href="../UI-structure/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -695,7 +771,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/signup-page/" class="md-nav__link">
+      <a href="../UI-structure/signup-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +793,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/ui_elem/" class="md-nav__link">
+      <a href="../UI-structure/ui_elem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +815,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-events/" class="md-nav__link">
+      <a href="../UI-structure/user-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +837,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-friends/" class="md-nav__link">
+      <a href="../UI-structure/user-friends/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-info/" class="md-nav__link">
+      <a href="../UI-structure/user-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,19 +893,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -844,7 +918,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Data
@@ -858,7 +932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EventDTO/" class="md-nav__link">
+      <a href="../../data/EventDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,31 +951,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    EventEntity
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data/EventEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,68 +964,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -985,7 +976,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserDTO/" class="md-nav__link">
+      <a href="../../data/UserDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserEntity/" class="md-nav__link">
+      <a href="../../data/UserEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,37 +1178,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Format
+      Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Format">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jwt-token-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      JWT Token Management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JWT Token Management">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#usejwtts" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
+      useJWT.ts
     </span>
   </a>
   
@@ -1244,60 +1226,46 @@
 
 
 
-<h1 id="evententity">EventEntity</h1>
-<p>The <code>Event Entity</code> is strictly connected to the <a href="../EventDTO/"><code>Event DTO</code></a>!</p>
-<h2 id="format">Format</h2>
-<pre><code class="language-typescript">@Entity()
-export class EventEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+<h1 id="state-management">State Management</h1>
+<h4 id="overview">Overview</h4>
+<p>The project uses <strong>Zustand</strong> for state management. Zustand is a small, fast, and scalable state-management solution that provides a simple API for managing global state in React applications.</p>
+<h4 id="jwt-token-management">JWT Token Management</h4>
+<p>The <code>useJWT</code> hook is used to manage the JWT token, which is stored in local storage and used for authentication purposes.</p>
+<h5 id="usejwtts"><strong>useJWT.ts</strong></h5>
+<pre><code class="language-tsx">import { registerJWT, unregisterJWT } from '../http-client'
+import { create } from 'zustand'
 
-  @Column({ unique: true })
-  title: string;
+export const JWT_LOCALSTORAGE_KEY = 'tracery_jwt_token'
 
-  @Column()
-  description: string;
-
-  @Column()
-  location: string;
-
-  @Column({ type: &quot;timestamptz&quot; })
-  date: Date;
-
-  @ManyToMany(() =&gt; UserEntity, (user) =&gt; user.events)
-  users: UserEntity[];
+type TokenStorage = {
+  token: string | null
+  setToken: (newToken: string | null) =&gt; void
 }
+
+export const useJWT = create&lt;TokenStorage&gt;(set =&gt; ({
+  token: window.localStorage.getItem(JWT_LOCALSTORAGE_KEY),
+  setToken: newToken =&gt; {
+    if (newToken === null) {
+      window.localStorage.removeItem(JWT_LOCALSTORAGE_KEY)
+      unregisterJWT()
+    } else {
+      window.localStorage.setItem(JWT_LOCALSTORAGE_KEY, newToken)
+      registerJWT(newToken)
+    }
+    set(prev =&gt; ({
+      ...prev,
+      token: newToken,
+    }))
+  },
+}))
 </code></pre>
-<h3 id="properties">Properties</h3>
+<h1 id="global-state-management">Global State Management</h1>
+<p>Zustand is used to manage global state across the application. The state is defined using the <code>create</code> function from Zustand, which provides a simple and scalable way to manage state.</p>
+<h2 id="benefits-of-using-zustand">Benefits of Using Zustand</h2>
 <ul>
-<li><code>id</code>: Unique identifier for the event.</li>
-<li><code>title</code>: Event name/title (must be unique).</li>
-<li><code>description</code>: Detailed event description.</li>
-<li><code>location</code>: Physical location where the event takes place.</li>
-<li><code>date</code>: Date and time of the event (stored with timezone).</li>
-<li><code>users</code>: Many-to-many relationship with participating users.</li>
-</ul>
-<h3 id="key-relationships">Key Relationships</h3>
-<ol>
-<li>Friends: Self-referential many-to-many relationship allowing <a href="../UserEntity/"><code>users</code></a> to connect with other users</li>
-<li>Events: Many-to-many relationship with events, tracking which events a user participates in</li>
-</ol>
-<pre><code class="language-typescript">/**
- * Many-to-Many relationship with the UserEntity.
- * This property represents the users associated with the events. **/
- @type {UserEntity[]}
-  @ManyToMany(() =&gt; UserEntity, user =&gt; user.events)
-  users: UserEntity[]
-</code></pre>
-<p>The [<code>EventEntity</code>] forms the foundation of the application's social features and event participation system.</p>
-<h3 id="key-features">Key Features</h3>
-<ul>
-<li>Events are stored in the PostgreSQL database.</li>
-<li>Uses TypeORM decorators for database mapping.</li>
-<li>Enforces unique event titles to prevent duplicates.</li>
-<li>Maintains many-to-many relationship with users.</li>
-<li>API responses use EventDto, filtering sensitive user data.</li>
-<li>Allows users to create, join, and track events.</li>
+<li><strong>Simplicity</strong>: Zustand provides a simple API for managing state without the need for boilerplate code.</li>
+<li><strong>Performance</strong>: Zustand is fast and efficient, making it suitable for large-scale applications.</li>
+<li><strong>Scalability</strong>: Zustand's API is designed to be scalable, allowing you to manage complex state logic with ease.</li>
 </ul>
 
 

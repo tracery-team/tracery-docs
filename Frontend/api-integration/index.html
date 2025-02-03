@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/data/EventEntity/">
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/Frontend/api-integration/">
       
       
-        <link rel="prev" href="../EventDTO/">
+        <link rel="prev" href="../../technologies/">
       
       
-        <link rel="next" href="../UserDTO/">
+        <link rel="next" href="../frontend/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>EventEntity - Tracery Documentation</title>
+        <title>API Integration - Tracery Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#evententity" class="md-skip">
+        <a href="#api-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EventEntity
+              API Integration
             
           </span>
         </div>
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,17 +400,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -425,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Frontend
@@ -436,10 +438,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Frontend/api-integration/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    API Integration
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -449,6 +472,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axios-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axios Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Axios Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#http-clientts" class="md-nav__link">
+    <span class="md-ellipsis">
+      http-client.ts
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-hooks-for-api-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Hooks for API Calls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-api-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of API Hooks
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -461,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +595,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/project-structure/" class="md-nav__link">
+      <a href="../project-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -505,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/routing/" class="md-nav__link">
+      <a href="../routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,7 +639,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/state-management/" class="md-nav__link">
+      <a href="../state-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/appbar/" class="md-nav__link">
+      <a href="../UI-structure/appbar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/event-info/" class="md-nav__link">
+      <a href="../UI-structure/event-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/login-page/" class="md-nav__link">
+      <a href="../UI-structure/login-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/main-page/" class="md-nav__link">
+      <a href="../UI-structure/main-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/routing/" class="md-nav__link">
+      <a href="../UI-structure/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -695,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/signup-page/" class="md-nav__link">
+      <a href="../UI-structure/signup-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/ui_elem/" class="md-nav__link">
+      <a href="../UI-structure/ui_elem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-events/" class="md-nav__link">
+      <a href="../UI-structure/user-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-friends/" class="md-nav__link">
+      <a href="../UI-structure/user-friends/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-info/" class="md-nav__link">
+      <a href="../UI-structure/user-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,19 +929,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -844,7 +954,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Data
@@ -858,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EventDTO/" class="md-nav__link">
+      <a href="../../data/EventDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,31 +987,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    EventEntity
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data/EventEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,68 +1000,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -985,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserDTO/" class="md-nav__link">
+      <a href="../../data/UserDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +1034,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserEntity/" class="md-nav__link">
+      <a href="../../data/UserEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,37 +1214,28 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Format
+      Overview
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Format">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#axios-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Axios Configuration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Axios Configuration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#http-clientts" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
+      http-client.ts
     </span>
   </a>
   
@@ -1225,6 +1243,42 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      Error handling
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-hooks-for-api-calls" class="md-nav__link">
+    <span class="md-ellipsis">
+      Custom Hooks for API Calls
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Usage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-api-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      List of API Hooks
+    </span>
+  </a>
   
 </li>
       
@@ -1244,60 +1298,205 @@
 
 
 
-<h1 id="evententity">EventEntity</h1>
-<p>The <code>Event Entity</code> is strictly connected to the <a href="../EventDTO/"><code>Event DTO</code></a>!</p>
-<h2 id="format">Format</h2>
-<pre><code class="language-typescript">@Entity()
-export class EventEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+<h1 id="api-integration">API Integration</h1>
+<h2 id="overview">Overview</h2>
+<p>The project uses Axios for making HTTP requests to the backend API. The Axios instance is configured in the <code>http-client.ts</code> file, which sets up the base URL, timeout, and common headers for all requests. Additionally, the project includes custom hooks for interacting with various API endpoints.</p>
+<h2 id="axios-configuration">Axios Configuration</h2>
+<p>The Axios instance is configured in the <code>http-client.ts</code> file. This configuration includes the base URL for the API, a timeout setting, and default headers for all requests.</p>
+<h3 id="http-clientts"><code>http-client.ts</code></h3>
+<pre><code class="language-tsx">import axios from 'axios'
 
-  @Column({ unique: true })
-  title: string;
+export const client = axios.create({
+  baseURL: '/api',
+  timeout: 1000,
+  headers: {
+    'Content-Type': 'application/json',
+  },
+})
 
-  @Column()
-  description: string;
+export const registerJWT = (token: string) =&gt; {
+  client.defaults.headers.common['Authorization'] = `Bearer ${token}`
+}
 
-  @Column()
-  location: string;
-
-  @Column({ type: &quot;timestamptz&quot; })
-  date: Date;
-
-  @ManyToMany(() =&gt; UserEntity, (user) =&gt; user.events)
-  users: UserEntity[];
+export const unregisterJWT = () =&gt; {
+  delete client.defaults.headers.common['Authorization']
 }
 </code></pre>
-<h3 id="properties">Properties</h3>
-<ul>
-<li><code>id</code>: Unique identifier for the event.</li>
-<li><code>title</code>: Event name/title (must be unique).</li>
-<li><code>description</code>: Detailed event description.</li>
-<li><code>location</code>: Physical location where the event takes place.</li>
-<li><code>date</code>: Date and time of the event (stored with timezone).</li>
-<li><code>users</code>: Many-to-many relationship with participating users.</li>
-</ul>
-<h3 id="key-relationships">Key Relationships</h3>
-<ol>
-<li>Friends: Self-referential many-to-many relationship allowing <a href="../UserEntity/"><code>users</code></a> to connect with other users</li>
-<li>Events: Many-to-many relationship with events, tracking which events a user participates in</li>
-</ol>
-<pre><code class="language-typescript">/**
- * Many-to-Many relationship with the UserEntity.
- * This property represents the users associated with the events. **/
- @type {UserEntity[]}
-  @ManyToMany(() =&gt; UserEntity, user =&gt; user.events)
-  users: UserEntity[]
+<h2 id="error-handling">Error handling</h2>
+<p>The project includes a utility file <code>lib.ts</code> for handling API errors. This file defines the structure of API error responses and provides utility functions for managing errors.</p>
+<pre><code class="language-tsx">export type ErrorAPI = {
+  message: string | string[]
+  error?: string
+  statusCode: number
+}
 </code></pre>
-<p>The [<code>EventEntity</code>] forms the foundation of the application's social features and event participation system.</p>
-<h3 id="key-features">Key Features</h3>
+<h2 id="custom-hooks-for-api-calls">Custom Hooks for API Calls</h2>
+<p>The project uses custom hooks to interact with various API endpoints. These hooks encapsulate the logic for making API requests and managing the response data.</p>
+<pre><code class="language-tsx">import { useMutation } from '@tanstack/react-query'
+import { useJWT } from '../../hooks/useJWT'
+import { ErrorAPI, intoErrorAPI, propagateErrorAPI } from '../../lib'
+import { useCallback } from 'react'
+import { client } from '../../http-client'
+
+const API_LOGIN_ROUTE = '/auth/login'
+
+export type LoginData = {
+  login: string
+  password: string
+}
+
+export type LoginResponse = {
+  access_token: string
+}
+
+const isLoginResponse = (obj: any): obj is LoginResponse =&gt; {
+  return (
+    obj !== null &amp;&amp;
+    obj !== undefined &amp;&amp;
+    'access_token' in obj &amp;&amp;
+    typeof obj.access_token === 'string'
+  )
+}
+
+export const useLoginAPI = () =&gt; {
+  const { setToken } = useJWT()
+
+  const mutationFn = useCallback(
+    async (data: LoginData) =&gt; {
+      try {
+        const { data: responseData } = await client.post(API_LOGIN_ROUTE, data)
+        if (isLoginResponse(responseData)) {
+          setToken(responseData.access_token)
+          return responseData
+        }
+        throw intoErrorAPI(responseData)
+      } catch (error: any) {
+        throw propagateErrorAPI(error)
+      }
+    },
+    [setToken],
+  )
+
+  return useMutation&lt;LoginResponse, ErrorAPI, LoginData&gt;({
+    mutationFn,
+  })
+}
+</code></pre>
+<h2 id="example-usage">Example Usage</h2>
+<p>Here's an example of how to use the <code>useLoginAPI</code> hook in a component:</p>
+<pre><code class="language-tsx">import { Box, Button, Stack, TextField, Typography } from '@mui/material'
+import { memo, useCallback, useEffect } from 'react'
+import { SubmitHandler, useForm } from 'react-hook-form'
+import { useLoginAPI } from './api'
+import { useNavigate } from 'react-router'
+import { extractMessage } from '../../lib'
+import { useRouteProtection } from '../../hooks/useRouteProtection'
+
+const REDIRECT_ROUTE = '/'
+const SIGNUP_ROUTE = '/auth/sign-up'
+
+type LoginFormValues = {
+  login: string
+  password: string
+}
+
+const Login = () =&gt; {
+  useRouteProtection({ authorized: false })
+
+  const { register, handleSubmit, formState, reset } =
+    useForm&lt;LoginFormValues&gt;()
+
+  const { mutate, error, isError, isSuccess } = useLoginAPI()
+
+  const navigate = useNavigate()
+  useEffect(() =&gt; {
+    if (!isSuccess) return
+    reset()
+    navigate(REDIRECT_ROUTE)
+  }, [isSuccess, navigate, reset])
+
+  type Handler = SubmitHandler&lt;LoginFormValues&gt;
+  const handleLogin: Handler = useCallback(
+    data =&gt; {
+      mutate(data)
+    },
+    [mutate],
+  )
+
+  const handleSignUpLinkClick = useCallback(
+    (event: React.MouseEvent) =&gt; {
+      event.preventDefault()
+      navigate(SIGNUP_ROUTE)
+    },
+    [navigate],
+  )
+
+  return (
+    &lt;Box
+      sx={{
+        width: '100vw',
+        height: '100vh',
+        display: 'grid',
+        placeItems: 'center',
+      }}
+    &gt;
+      &lt;Stack spacing={4}&gt;
+        &lt;Stack spacing={0.5}&gt;
+          &lt;Typography variant=&quot;h2&quot; component=&quot;h1&quot;&gt;
+            Welcome to Tracery
+          &lt;/Typography&gt;
+          &lt;Typography variant=&quot;h5&quot; color=&quot;textSecondary&quot;&gt;
+            Keep in contact with your friends offline
+          &lt;/Typography&gt;
+        &lt;/Stack&gt;
+
+        &lt;Stack spacing={1.5}&gt;
+          &lt;TextField
+            label=&quot;Login&quot;
+            {...register('login', { required: 'Please, provide your login' })}
+            fullWidth
+            error={Boolean(formState.errors.login)}
+            helperText={formState.errors.login?.message}
+          /&gt;
+          &lt;TextField
+            label=&quot;Password&quot;
+            type=&quot;password&quot;
+            {...register('password', {
+              required: 'Please, provide your password',
+            })}
+            fullWidth
+            error={Boolean(formState.errors.password)}
+            helperText={formState.errors.password?.message}
+          /&gt;
+          &lt;Button onClick={handleSubmit(handleLogin)}&gt;Login&lt;/Button&gt;
+          &lt;Button
+            component=&quot;a&quot;
+            href={SIGNUP_ROUTE}
+            onClick={handleSignUpLinkClick}
+          &gt;
+            Don't have an account?
+          &lt;/Button&gt;
+          {isError &amp;&amp; (
+            &lt;Typography variant=&quot;subtitle1&quot; color=&quot;error&quot;&gt;
+              {extractMessage(error)}
+            &lt;/Typography&gt;
+          )}
+        &lt;/Stack&gt;
+      &lt;/Stack&gt;
+    &lt;/Box&gt;
+  )
+}
+
+export default memo(Login)
+
+</code></pre>
+<h2 id="list-of-api-hooks">List of API Hooks</h2>
 <ul>
-<li>Events are stored in the PostgreSQL database.</li>
-<li>Uses TypeORM decorators for database mapping.</li>
-<li>Enforces unique event titles to prevent duplicates.</li>
-<li>Maintains many-to-many relationship with users.</li>
-<li>API responses use EventDto, filtering sensitive user data.</li>
-<li>Allows users to create, join, and track events.</li>
+<li><code>useLoginAPI</code>: Hook for logging in a user.</li>
+<li><code>useProfileInfoAPI</code>: Hook for fetching user profile information.</li>
+<li><code>useAddFriendAPI</code>: Hook for adding a friend.</li>
+<li><code>useAddEventAPI</code>: Hook for adding an event.</li>
+<li><code>useEventInfoAPI</code>: Hook for fetching event information.</li>
 </ul>
 
 

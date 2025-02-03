@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/data/EventEntity/">
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/Frontend/routing/">
       
       
-        <link rel="prev" href="../EventDTO/">
+        <link rel="prev" href="../project-structure/">
       
       
-        <link rel="next" href="../UserDTO/">
+        <link rel="next" href="../state-management/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>EventEntity - Tracery Documentation</title>
+        <title>Routing - Tracery Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#evententity" class="md-skip">
+        <a href="#routing" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EventEntity
+              Routing
             
           </span>
         </div>
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,17 +400,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -425,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Frontend
@@ -439,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/api-integration/" class="md-nav__link">
+      <a href="../api-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -483,7 +485,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/project-structure/" class="md-nav__link">
+      <a href="../project-structure/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -502,10 +504,29 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Frontend/routing/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Routing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -515,6 +536,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Routing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Overview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#main-routing-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Main Routing Configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#route-protection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Route Protection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -527,7 +617,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/state-management/" class="md-nav__link">
+      <a href="../state-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +675,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/appbar/" class="md-nav__link">
+      <a href="../UI-structure/appbar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +697,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/event-info/" class="md-nav__link">
+      <a href="../UI-structure/event-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +719,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/login-page/" class="md-nav__link">
+      <a href="../UI-structure/login-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/main-page/" class="md-nav__link">
+      <a href="../UI-structure/main-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +763,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/routing/" class="md-nav__link">
+      <a href="../UI-structure/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -695,7 +785,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/signup-page/" class="md-nav__link">
+      <a href="../UI-structure/signup-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/ui_elem/" class="md-nav__link">
+      <a href="../UI-structure/ui_elem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +829,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-events/" class="md-nav__link">
+      <a href="../UI-structure/user-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +851,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-friends/" class="md-nav__link">
+      <a href="../UI-structure/user-friends/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-info/" class="md-nav__link">
+      <a href="../UI-structure/user-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,19 +907,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -844,7 +932,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Data
@@ -858,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EventDTO/" class="md-nav__link">
+      <a href="../../data/EventDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,31 +965,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    EventEntity
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data/EventEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,68 +978,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -985,7 +990,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserDTO/" class="md-nav__link">
+      <a href="../../data/UserDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +1012,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserEntity/" class="md-nav__link">
+      <a href="../../data/UserEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1177,8 +1182,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1187,37 +1190,46 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
+  <a href="#routing" class="md-nav__link">
     <span class="md-ellipsis">
-      Format
+      Routing
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Format">
+    <nav class="md-nav" aria-label="Routing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
+      Overview
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
+  <a href="#main-routing-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Relationships
+      Main Routing Configuration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#route-protection" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      Route Protection
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#page-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      Page Components
     </span>
   </a>
   
@@ -1244,60 +1256,115 @@
 
 
 
-<h1 id="evententity">EventEntity</h1>
-<p>The <code>Event Entity</code> is strictly connected to the <a href="../EventDTO/"><code>Event DTO</code></a>!</p>
-<h2 id="format">Format</h2>
-<pre><code class="language-typescript">@Entity()
-export class EventEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
+  <h1>Routing</h1>
 
-  @Column({ unique: true })
-  title: string;
+<h2 id="routing">Routing</h2>
+<h3 id="overview">Overview</h3>
+<p>The routing in this project is handled using <code>react-router</code>. The main entry point for the routing setup is in the <code>main.tsx</code> file. The application uses a nested routing structure to manage different pages and their respective routes.</p>
+<h3 id="main-routing-configuration">Main Routing Configuration</h3>
+<p>The main routing configuration is defined in the <code>main.tsx</code> file. It sets up the routes for the main pages of the application. Below is the routing setup:</p>
+<pre><code class="language-tsx">import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import Main from './pages/Main'
+import Login from './pages/Login'
+import SignUp from './pages/SignUp'
+import EventInfo from './pages/EventInfo'
+import UserInfo from './pages/UserInfo'
+import { css, Global } from '@emotion/react'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 
-  @Column()
-  description: string;
+const queryClient = new QueryClient()
 
-  @Column()
-  location: string;
+createRoot(document.getElementById('root')!).render(
+  &lt;StrictMode&gt;
+    &lt;QueryClientProvider client={queryClient}&gt;
+      &lt;BrowserRouter&gt;
+        &lt;Routes&gt;
+          &lt;Route path=&quot;/&quot; element={&lt;Main /&gt;} /&gt;
+          &lt;Route path=&quot;auth&quot;&gt;
+            &lt;Route path=&quot;login&quot; element={&lt;Login /&gt;} /&gt;
+            &lt;Route path=&quot;sign-up&quot; element={&lt;SignUp /&gt;} /&gt;
+          &lt;/Route&gt;
+          &lt;Route path=&quot;info&quot;&gt;
+            &lt;Route path=&quot;event/:id&quot; element={&lt;EventInfo /&gt;} /&gt;
+            &lt;Route path=&quot;user/:id&quot; element={&lt;UserInfo /&gt;} /&gt;
+          &lt;/Route&gt;
+        &lt;/Routes&gt;
+      &lt;/BrowserRouter&gt;
+    &lt;/QueryClientProvider&gt;
+    &lt;Global
+      styles={css`
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      `}
+    /&gt;
+  &lt;/StrictMode&gt;
+)  
+</code></pre>
+<h3 id="route-protection">Route Protection</h3>
+<p>The project uses a custom hook <code>useRouteProtection</code> to protect routes based on the user's authentication status. This hook redirects users to the appropriate routes depending on whether they are authorized or not. Below is the <code>useRouteProtection</code> implementation:</p>
+<pre><code class="language-tsx">import { useNavigate } from 'react-router'
+import { useJWT } from './useJWT'
+import { useEffect } from 'react'
 
-  @Column({ type: &quot;timestamptz&quot; })
-  date: Date;
+const AUTHORIZED_REDIRECT_ROUTE = '/'
+const UNAUTHORIZED_REDIRECT_ROUTE = '/auth/login'
 
-  @ManyToMany(() =&gt; UserEntity, (user) =&gt; user.events)
-  users: UserEntity[];
+export const useRouteProtection = ({ authorized }: { authorized: boolean }) =&gt; {
+  const { token } = useJWT()
+  const navigate = useNavigate()
+
+  useEffect(() =&gt; {
+    // if authorization is required
+    if (authorized) {
+      if (token !== null) return
+      navigate(UNAUTHORIZED_REDIRECT_ROUTE)
+      return
+    }
+    // if there should be no authorization
+    if (token === null) return
+    navigate(AUTHORIZED_REDIRECT_ROUTE)
+  }, [token, authorized])
 }
 </code></pre>
-<h3 id="properties">Properties</h3>
+<h3 id="page-components">Page Components</h3>
+<p>The following are the main page components and their respective routes:</p>
 <ul>
-<li><code>id</code>: Unique identifier for the event.</li>
-<li><code>title</code>: Event name/title (must be unique).</li>
-<li><code>description</code>: Detailed event description.</li>
-<li><code>location</code>: Physical location where the event takes place.</li>
-<li><code>date</code>: Date and time of the event (stored with timezone).</li>
-<li><code>users</code>: Many-to-many relationship with participating users.</li>
-</ul>
-<h3 id="key-relationships">Key Relationships</h3>
-<ol>
-<li>Friends: Self-referential many-to-many relationship allowing <a href="../UserEntity/"><code>users</code></a> to connect with other users</li>
-<li>Events: Many-to-many relationship with events, tracking which events a user participates in</li>
-</ol>
-<pre><code class="language-typescript">/**
- * Many-to-Many relationship with the UserEntity.
- * This property represents the users associated with the events. **/
- @type {UserEntity[]}
-  @ManyToMany(() =&gt; UserEntity, user =&gt; user.events)
-  users: UserEntity[]
-</code></pre>
-<p>The [<code>EventEntity</code>] forms the foundation of the application's social features and event participation system.</p>
-<h3 id="key-features">Key Features</h3>
-<ul>
-<li>Events are stored in the PostgreSQL database.</li>
-<li>Uses TypeORM decorators for database mapping.</li>
-<li>Enforces unique event titles to prevent duplicates.</li>
-<li>Maintains many-to-many relationship with users.</li>
-<li>API responses use EventDto, filtering sensitive user data.</li>
-<li>Allows users to create, join, and track events.</li>
+<li><strong>Main Page:</strong></li>
+<li><strong>Route:</strong> <code>/</code></li>
+<li>
+<p><strong>Component:</strong> <code>Main</code></p>
+</li>
+<li>
+<p><strong>Login Page:</strong></p>
+</li>
+<li><strong>Route:</strong> <code>/auth/login</code></li>
+<li>
+<p><strong>Component:</strong> <code>Login</code></p>
+</li>
+<li>
+<p><strong>Sign Up Page:</strong></p>
+</li>
+<li><strong>Route:</strong> <code>/auth/sign-up</code></li>
+<li>
+<p><strong>Component:</strong> <code>SignUp</code></p>
+</li>
+<li>
+<p><strong>Event Info Page:</strong></p>
+</li>
+<li><strong>Route:</strong> <code>/info/event/:id</code></li>
+<li>
+<p><strong>Component:</strong> <code>EventInfo</code></p>
+</li>
+<li>
+<p><strong>User Info Page:</strong></p>
+</li>
+<li><strong>Route:</strong> <code>/info/user/:id</code></li>
+<li><strong>Component:</strong> <code>UserInfo</code></li>
 </ul>
 
 

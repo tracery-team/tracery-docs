@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/data/EventEntity/">
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/Frontend/project-structure/">
       
       
-        <link rel="prev" href="../EventDTO/">
+        <link rel="prev" href="../frontend/">
       
       
-        <link rel="next" href="../UserDTO/">
+        <link rel="next" href="../routing/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>EventEntity - Tracery Documentation</title>
+        <title>Project Structure - Tracery Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#evententity" class="md-skip">
+        <a href="#project-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              EventEntity
+              Project Structure
             
           </span>
         </div>
@@ -277,7 +277,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../" class="md-nav__link">
+      <a href="../../data/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -400,17 +400,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
           <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
@@ -425,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Frontend
@@ -439,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/api-integration/" class="md-nav__link">
+      <a href="../api-integration/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -461,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/frontend/" class="md-nav__link">
+      <a href="../frontend/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -480,10 +482,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../Frontend/project-structure/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Project Structure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -493,6 +516,146 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#src" class="md-nav__link">
+    <span class="md-ellipsis">
+      src/
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="src/">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#other-files-in-the-src-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      Other Files in the src/ folder:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      package.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsconfigjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      tsconfig.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsconfigappjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      tsconfig.app.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsconfignodejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      tsconfig.node.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viteconfigts" class="md-nav__link">
+    <span class="md-ellipsis">
+      vite.config.ts:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslintconfigjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      eslint.config.js:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prettierrcmjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      .prettierrc.mjs:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .gitignore:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      index.html:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -505,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/routing/" class="md-nav__link">
+      <a href="../routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -527,7 +690,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/state-management/" class="md-nav__link">
+      <a href="../state-management/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -585,7 +748,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/appbar/" class="md-nav__link">
+      <a href="../UI-structure/appbar/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -607,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/event-info/" class="md-nav__link">
+      <a href="../UI-structure/event-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -629,7 +792,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/login-page/" class="md-nav__link">
+      <a href="../UI-structure/login-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -651,7 +814,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/main-page/" class="md-nav__link">
+      <a href="../UI-structure/main-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -673,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/routing/" class="md-nav__link">
+      <a href="../UI-structure/routing/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -695,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/signup-page/" class="md-nav__link">
+      <a href="../UI-structure/signup-page/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/ui_elem/" class="md-nav__link">
+      <a href="../UI-structure/ui_elem/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -739,7 +902,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-events/" class="md-nav__link">
+      <a href="../UI-structure/user-events/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -761,7 +924,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-friends/" class="md-nav__link">
+      <a href="../UI-structure/user-friends/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -783,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Frontend/UI-structure/user-info/" class="md-nav__link">
+      <a href="../UI-structure/user-info/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -817,19 +980,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
         
           
           <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
@@ -844,7 +1005,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_12">
             <span class="md-nav__icon md-icon"></span>
             Data
@@ -858,7 +1019,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../EventDTO/" class="md-nav__link">
+      <a href="../../data/EventDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -877,31 +1038,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    EventEntity
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../data/EventEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -911,68 +1051,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
-    <span class="md-ellipsis">
-      Format
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Format">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Relationships
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Key Features
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -985,7 +1063,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserDTO/" class="md-nav__link">
+      <a href="../../data/UserDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1007,7 +1085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../UserEntity/" class="md-nav__link">
+      <a href="../../data/UserEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1187,37 +1265,115 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#format" class="md-nav__link">
+  <a href="#src" class="md-nav__link">
     <span class="md-ellipsis">
-      Format
+      src/
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Format">
+    <nav class="md-nav" aria-label="src/">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
+  <a href="#other-files-in-the-src-folder" class="md-nav__link">
     <span class="md-ellipsis">
-      Properties
+      Other Files in the src/ folder:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuration-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuration Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuration Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      package.json:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-relationships" class="md-nav__link">
+  <a href="#tsconfigjson" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Relationships
+      tsconfig.json:
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#key-features" class="md-nav__link">
+  <a href="#tsconfigappjson" class="md-nav__link">
     <span class="md-ellipsis">
-      Key Features
+      tsconfig.app.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tsconfignodejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      tsconfig.node.json:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#viteconfigts" class="md-nav__link">
+    <span class="md-ellipsis">
+      vite.config.ts:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eslintconfigjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      eslint.config.js:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prettierrcmjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      .prettierrc.mjs:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      .gitignore:
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      index.html:
     </span>
   </a>
   
@@ -1244,60 +1400,95 @@
 
 
 
-<h1 id="evententity">EventEntity</h1>
-<p>The <code>Event Entity</code> is strictly connected to the <a href="../EventDTO/"><code>Event DTO</code></a>!</p>
-<h2 id="format">Format</h2>
-<pre><code class="language-typescript">@Entity()
-export class EventEntity {
-  @PrimaryGeneratedColumn()
-  id: number;
-
-  @Column({ unique: true })
-  title: string;
-
-  @Column()
-  description: string;
-
-  @Column()
-  location: string;
-
-  @Column({ type: &quot;timestamptz&quot; })
-  date: Date;
-
-  @ManyToMany(() =&gt; UserEntity, (user) =&gt; user.events)
-  users: UserEntity[];
-}
-</code></pre>
-<h3 id="properties">Properties</h3>
+<h1 id="project-structure">Project Structure</h1>
+<h2 id="src">src/</h2>
+<p>The <code>src/</code> folder contains the main source code of the frontend application.</p>
 <ul>
-<li><code>id</code>: Unique identifier for the event.</li>
-<li><code>title</code>: Event name/title (must be unique).</li>
-<li><code>description</code>: Detailed event description.</li>
-<li><code>location</code>: Physical location where the event takes place.</li>
-<li><code>date</code>: Date and time of the event (stored with timezone).</li>
-<li><code>users</code>: Many-to-many relationship with participating users.</li>
+<li>
+<p><strong>assets/</strong>: Contains static assets like images, icons, fonts, etc. These are files that are directly referenced in the app (images, background images).</p>
+</li>
+<li>
+<p><strong>hooks/</strong>: This folder contains custom React hooks used throughout the application. It includes:</p>
+</li>
+<li><code>useJWT</code>: Custom hook for handling JWT token management.</li>
+<li><code>useDebounce</code>: Custom hook for debouncing input values.</li>
+<li>
+<p><code>useRouteProtection</code>: Custom hook that uses React Router's useNavigate and the useJWT hook to protect routes based on the user's authentication status.</p>
+</li>
+<li>
+<p><strong>pages/</strong>: Contains all page components that represent different routes in the application. Page components include:</p>
+</li>
+<li><code>Login</code>: Login page component.</li>
+<li><code>Main</code>: Main page with user-related information and events.</li>
+<li><code>EventInfo</code>: Page displaying detailed information about an event.</li>
+<li><code>SignUp</code>: Page for users to sign up for an account.</li>
 </ul>
-<h3 id="key-relationships">Key Relationships</h3>
-<ol>
-<li>Friends: Self-referential many-to-many relationship allowing <a href="../UserEntity/"><code>users</code></a> to connect with other users</li>
-<li>Events: Many-to-many relationship with events, tracking which events a user participates in</li>
-</ol>
-<pre><code class="language-typescript">/**
- * Many-to-Many relationship with the UserEntity.
- * This property represents the users associated with the events. **/
- @type {UserEntity[]}
-  @ManyToMany(() =&gt; UserEntity, user =&gt; user.events)
-  users: UserEntity[]
-</code></pre>
-<p>The [<code>EventEntity</code>] forms the foundation of the application's social features and event participation system.</p>
-<h3 id="key-features">Key Features</h3>
+<h3 id="other-files-in-the-src-folder">Other Files in the <code>src/</code> folder:</h3>
 <ul>
-<li>Events are stored in the PostgreSQL database.</li>
-<li>Uses TypeORM decorators for database mapping.</li>
-<li>Enforces unique event titles to prevent duplicates.</li>
-<li>Maintains many-to-many relationship with users.</li>
-<li>API responses use EventDto, filtering sensitive user data.</li>
-<li>Allows users to create, join, and track events.</li>
+<li><strong>http-client.ts</strong>: </li>
+<li>Contains the setup and configuration for making HTTP requests using Axios.</li>
+<li>
+<p>Sets base URL and defines common request/response interceptors for managing tokens and error handling.</p>
+</li>
+<li>
+<p><strong>lib.ts</strong>: </p>
+</li>
+<li>Utility functions and common helper functions used across the project.</li>
+<li>
+<p>Contains functions like <code>intoErrorAPI</code> and <code>propagateErrorAPI</code> for error handling.</p>
+</li>
+<li>
+<p><strong>main.tsx</strong>: </p>
+</li>
+<li>The entry point of the application where React is rendered.</li>
+<li>
+<p>Contains routing logic, global styles, and the main app layout.</p>
+</li>
+<li>
+<p><strong>vite-env.d.ts</strong>: </p>
+</li>
+<li>TypeScript definition file used for Vite environment variables.</li>
+</ul>
+<h2 id="configuration-files">Configuration Files</h2>
+<h3 id="packagejson"><strong>package.json</strong>:</h3>
+<ul>
+<li>Contains the project's metadata (e.g., name, version, dependencies, scripts) and configuration for the NPM package manager.</li>
+<li>Defines build and development scripts.</li>
+</ul>
+<h3 id="tsconfigjson"><strong>tsconfig.json</strong>:</h3>
+<ul>
+<li>TypeScript configuration file that sets up TypeScript compiler options (e.g., strict mode, module resolution, etc.).</li>
+</ul>
+<h3 id="tsconfigappjson"><strong>tsconfig.app.json</strong>:</h3>
+<ul>
+<li>TypeScript configuration specific to the application code, extending the base <code>tsconfig.json</code>.</li>
+</ul>
+<h3 id="tsconfignodejson"><strong>tsconfig.node.json</strong>:</h3>
+<ul>
+<li>TypeScript configuration specific for Node.js, ensuring that Node.js modules and types are correctly recognized.</li>
+</ul>
+<h3 id="viteconfigts"><strong>vite.config.ts</strong>:</h3>
+<ul>
+<li>Vite build configuration for setting up the development environment and building the project for production.</li>
+<li>Defines configurations like entry points, output paths, and plugins.</li>
+</ul>
+<h3 id="eslintconfigjs"><strong>eslint.config.js</strong>:</h3>
+<ul>
+<li>ESLint configuration for linting JavaScript and TypeScript files.</li>
+<li>Ensures consistent code style and best practices.</li>
+</ul>
+<h3 id="prettierrcmjs"><strong>.prettierrc.mjs</strong>:</h3>
+<ul>
+<li>Configuration file for Prettier, which automatically formats the code to ensure a consistent code style.</li>
+</ul>
+<h3 id="gitignore"><strong>.gitignore</strong>:</h3>
+<ul>
+<li>Specifies which files and directories should be ignored by Git. Commonly used to ignore build directories, node modules, and environment files.</li>
+</ul>
+<h3 id="indexhtml"><strong>index.html</strong>:</h3>
+<ul>
+<li>The HTML template file for the application.</li>
+<li>Defines the root element and other meta information for the application.</li>
 </ul>
 
 
