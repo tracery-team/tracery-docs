@@ -1,5 +1,6 @@
 
-# Application Entry Point 
+# Frontend
+## Application Entry Point 
 
 File `main.tsx` is the entry point of the application. It is responsible for **rendering the React application**, **setting up global providers**, and **configuring routing**.
 
