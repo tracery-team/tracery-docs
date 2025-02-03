@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/git-and-github/">
+        <link rel="canonical" href="https://tracery-team.github.io/tracery-docs/data/">
       
       
-        <link rel="prev" href="../frontend/">
+        <link rel="prev" href="../code-style/">
       
       
-        <link rel="next" href="../levenshtein/">
+        <link rel="next" href="../frontend/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Git and Github - Tracery Documentation</title>
+        <title>Data Structure - Tracery Documentation</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#git-and-github" class="md-skip">
+        <a href="#data-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Git and Github
+              Data Structure
             
           </span>
         </div>
@@ -274,10 +274,31 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../data/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Data Structure
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -287,6 +308,143 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#entity-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entity Models
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#database-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Database Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transfer-objects-dto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transfer Objects (DTO)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#api-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Entity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Entity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-dto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event DTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-dto" class="md-nav__link">
+    <span class="md-ellipsis">
+      User DTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transfer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -316,31 +474,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Git and Github
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../git-and-github/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -350,185 +487,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-desktop" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitHub Desktop
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sourcetree" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sourcetree
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitgraph" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitGraph
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-use-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to use Git?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to use Git?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#list-of-most-popular-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      List of most popular commands
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#popular-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Popular scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Popular scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-feature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding a feature
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#downloading-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Downloading Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-changes-from-other-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using changes from other branches
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-gitignore-or-not-to-gitignore" class="md-nav__link">
-    <span class="md-ellipsis">
-      To .gitignore or not to .gitignore
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#conventional-commits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Conventional Commits
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#clear-and-intuitive-collaboration" class="md-nav__link">
-    <span class="md-ellipsis">
-      Clear and Intuitive Collaboration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clear and Intuitive Collaboration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#our-plan-of-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      Our plan of work
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -639,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/EventDTO/" class="md-nav__link">
+      <a href="EventDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -661,7 +619,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/EventEntity/" class="md-nav__link">
+      <a href="EventEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -683,7 +641,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/UserDTO/" class="md-nav__link">
+      <a href="UserDTO/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -705,7 +663,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../data/UserEntity/" class="md-nav__link">
+      <a href="UserEntity/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -885,161 +843,119 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#entity-models" class="md-nav__link">
     <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#git" class="md-nav__link">
-    <span class="md-ellipsis">
-      Git
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#github-desktop" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitHub Desktop
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sourcetree" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sourcetree
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gitgraph" class="md-nav__link">
-    <span class="md-ellipsis">
-      GitGraph
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-use-git" class="md-nav__link">
-    <span class="md-ellipsis">
-      How to use Git?
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="How to use Git?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#list-of-most-popular-commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      List of most popular commands
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#popular-scenarios" class="md-nav__link">
-    <span class="md-ellipsis">
-      Popular scenarios
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Popular scenarios">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#adding-a-feature" class="md-nav__link">
-    <span class="md-ellipsis">
-      Adding a feature
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#downloading-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Downloading Changes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#using-changes-from-other-branches" class="md-nav__link">
-    <span class="md-ellipsis">
-      Using changes from other branches
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#to-gitignore-or-not-to-gitignore" class="md-nav__link">
-    <span class="md-ellipsis">
-      To .gitignore or not to .gitignore
+      Entity Models
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conventional-commits" class="md-nav__link">
+  <a href="#database-layer" class="md-nav__link">
     <span class="md-ellipsis">
-      Conventional Commits
+      Database Layer
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#clear-and-intuitive-collaboration" class="md-nav__link">
+  <a href="#data-transfer-objects-dto" class="md-nav__link">
     <span class="md-ellipsis">
-      Clear and Intuitive Collaboration
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Clear and Intuitive Collaboration">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#our-plan-of-work" class="md-nav__link">
-    <span class="md-ellipsis">
-      Our plan of work
+      Data Transfer Objects (DTO)
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#api-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Entity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-entity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Entity
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-dto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event DTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-dto" class="md-nav__link">
+    <span class="md-ellipsis">
+      User DTO
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Storage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#event-relationships" class="md-nav__link">
+    <span class="md-ellipsis">
+      Event Relationships
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-transfer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Transfer
+    </span>
+  </a>
   
 </li>
       
@@ -1059,264 +975,72 @@
 
 
 
-<h1 id="git-and-github">Git and Github</h1>
-<p>Github is the central part of our
-collaboration. Our application source code
-is hosted under the single organization called
-<a href="https://github.com/tracery-team">Tracery Team</a>.</p>
-<p>We have 3 main repositories:</p>
-<ol>
-<li><a href="https://github.com/tracery-team/tracery-docs">Documentation</a></li>
-<li><a href="https://github.com/tracery-team/tracery-frontend">Front-End</a></li>
-<li><a href="https://github.com/tracery-team/tracery-backend">Back-End</a></li>
-</ol>
-<h2 id="getting-started">Getting Started</h2>
-<h3 id="git">Git</h3>
-<p>First of all, you need to install Git itself.
-You can run the following command to check whether
-you have it installed on your system:</p>
-<pre><code class="language-sh">git --version
+<h1 id="data-structure">Data Structure</h1>
+<p>The data inside the project is divided into two <code>Data (Entity) Models</code> and two <code>DTOs (Data Transfer Objects)</code> that exist in the API Layer.</p>
+<pre><code>/src
+    /data
+        /event.dto.ts
+        /user.dto.ts
+        /event.entity.ts
+        /user.entity.ts
 </code></pre>
-<p>if git is not found, then follow <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">these</a> instructions</p>
-<p>Git is the only obligatory program. And if you are
-using modern IDEs, only Git should be enough. Many of
-modern IDEs have a good Git integration. So, I encourage you
-to use the WebStorm JetBrains product. It will help you
-to track your Git history, pull changes from the remote,
-and resolve conflicts.</p>
-<p>JetBrains offers free licenses for students,
-so you should figure out how to get one.
-I got mine from <a href="https://education.github.com/pack">GitHub Education pack</a>.
-You can get WebStorm here: <a href="https://www.jetbrains.com/webstorm/">Download Link</a></p>
-<p><a href="https://code.visualstudio.com/">VSCode</a> is another option. You will have to 
-spend more time installing plugins, so when you install the IDE itself, search
-for Git plugins available on the Extension marketplace.</p>
-<p>However, there are still some useful programs
-that you may consider installing:</p>
-<h3 id="github-desktop">GitHub Desktop</h3>
-<p>I personally don't use it, but this tool
-may simplify the git and github workflow for you.
-Here you can download it: <a href="https://github.com/apps/desktop">Download Link</a></p>
-<h3 id="sourcetree">Sourcetree</h3>
-<p>Again, I personally don't use it, but
-Sourcetree shows you a beautiful graph
-of branches and commits. Sometimes it helps
-in understanding what's going on in the
-repository. Pretty nice program. 
-You can install it here: <a href="https://www.sourcetreeapp.com/">Download Link</a></p>
-<h3 id="gitgraph">GitGraph</h3>
-<p>I indeed use it. Console application 
-that shows you beautiful Git branch&amp;commit
-graphs. You can install it here: <a href="https://github.com/mlange-42/git-graph">Download Link</a></p>
-<h2 id="how-to-use-git">How to use Git?</h2>
-<p>My personal advice: use git + gitgraph from command line,
-and your IDE for conflicts resolution. All other tools
-introduce unnecessary complexity. Command-line Git
-itself is simple enough, and you don't need any other
-programs to be successful.</p>
-<h3 id="list-of-most-popular-commands">List of most popular commands</h3>
-<p>Here is the list of commands that you will be using:</p>
-<pre><code class="language-sh"># To download a repository locally
-git clone https://github.com/tracery-team/{repository}
-
-# Switch to git branch of your need
-git checkout &lt;branch&gt;
-
-# Check what has changed on GitHub - maybe someone added a new branch
-git fetch
-
-# Apply changes on GitHub to your current branch
-git pull
-
-# Check the status of your changes
-git status
-
-# See the changes (it will show you the changes in code)
-git diff
-
-# Add files to staging area - before commit
-git add . # all files
-git add src/* # only needed files
-
-# Commit changes - adds a comit to your history
-git commit -m &quot;feat(Header): added styling&quot;
-
-# Before commit, you may want to delete some file
-# from staging area, if you don't want to share it
-git rm &lt;file&gt;
-
-# Post your changes on GitHub
-git push
-
-# Discard changes, rollback to the last commit
-git stash
-
-# If you messed up something, rollback to any commit
-git reset --hard &lt;commit&gt;
-
-# If you want to apply changes from another branch, do
-git merge &lt;branch&gt;
+<p>The two Entity Models exist in the Database Layer. They are the <a href="UserEntity/"><code>UserEntity</code></a> and the <a href="EventEntity/"><code>EventEntity</code></a>.</p>
+<p>The two DTOs in the API Layer are the <a href="EventDTO/"><code>EventDto</code></a> and <a href="UserDTO/"><code>UserDto</code></a>.</p>
+<h3 id="entity-models">Entity Models</h3>
+<p><code>Entity Models</code> represent the structure of the data stored in the database. They define the schema of the database tables and include properties that map to the columns in those tables. They handle data persistence logic (like password hashing) and contain sensitive information. Each entity corresponds to a single table in the database.</p>
+<h3 id="database-layer">Database Layer</h3>
+<p>The <code>Database Layer</code> is responsible for managing the data storage and retrieval operations. It interacts with the database to perform <em>CRUD (Create, Read, Update, Delete)</em> operations on the data. This layer ensures that the data is stored in a structured and efficient manner, and provides an interface for the application to access and manipulate the data.</p>
+<h3 id="data-transfer-objects-dto">Data Transfer Objects (DTO)</h3>
+<p>The <code>DTOs</code> serve several important purposes in the application. These classes act as filters for sensitive data as they prevent exposing sensitive information like password hashes, ensuring that only the necessary data is exposed and transferred, enhancing security and performance.</p>
+<pre><code class="language-typescript">@Exclude()
+password: string  // Password is excluded from API responses
 </code></pre>
-<h3 id="popular-scenarios">Popular scenarios</h3>
-<h4 id="adding-a-feature">Adding a feature</h4>
-<pre><code class="language-sh"># You created a new issue on github with a branch
-# and you need to work on something using that branch
-
-# Get the remote changes from github
-git fetch
-git checkout feature-branch
-
-# Now you are on the feature-branch
-
-# Coding...
-# Coding...
-
-# Check what you did:
-git status
-git diff
-
-# Add your changes to staging area:
-git add src/my-feature/*
-
-# Check whether everything is OK:
-git status
-
-# Committing changes:
-git commit -m &quot;feat(src/my-feature): added a feature&quot;
-
-# Let everybody know about your changes,
-# publish them online on GitHub:
-git push
-</code></pre>
-<h4 id="downloading-changes">Downloading Changes</h4>
-<pre><code class="language-sh"># Imagine somebody did the previous scenario,
-# and then merged their changes to `main` branch.
-# You have an old `main` branch locally,
-# and you would like to update it
-
-# First of all, check whether
-# you have any remote changes
-git fetch
-
-# Normally it will show you
-# what has changed remotely
-
-# Now, you need to switch to your
-# main branch
-git checkout main
-
-# Update the main branch
-git pull
-
-# Now you have an up-to-date main branch
-</code></pre>
-<h4 id="using-changes-from-other-branches">Using changes from other branches</h4>
-<pre><code class="language-sh"># Imagine that someone is working on a branch
-# called feature-2. They implemented things that you
-# wish you had on your branch
-
-# merge their branch into your current branch
-git merge feature-2
-
-# Oh no! There are some conflicts.
-# Resolve the conflicts using your IDE
-
-# Continue the merge
-git merge --continue
-</code></pre>
-<h2 id="to-gitignore-or-not-to-gitignore">To .gitignore or not to .gitignore</h2>
-<p>Some files <strong><em>should not be tracked</em></strong> by git.
-They should nor be present in your local history,
-neither on GitHub.</p>
-<p>This includes:</p>
-<ol>
-<li>Environment variables files like .env, .env.runtime, etc.</li>
-<li>Files created by your IDE, like .idea, .vscode, etc.</li>
-<li>Files created by your programming platform, like node_modules</li>
-<li>Files created by your operating system, like .DS_Store</li>
-<li>Cache files</li>
-</ol>
-<p>And many, many more. The reason we don't want them
-to be on our version control system could be one of the following:</p>
-<ol>
-<li>They are large (node_modules can contain hundreds of megabytes)</li>
-<li>They contain sensitive data (like .env files, where you put passwords and API keys)</li>
-<li>They are unnecessary (everybody uses a different IDE, so why should we have your IDE files in our repo?)</li>
-<li>They may lead to inconsistencies</li>
-</ol>
-<p>There are two ways to deal with those files:</p>
-<ol>
-<li>Add them to .gitignore (<strong><em>the preferred way</em></strong>)</li>
-<li>Not adding them to staging area before commit: they will be excluded from commmit</li>
-</ol>
-<h2 id="conventional-commits">Conventional Commits</h2>
-<p>When you do a commit, you can <strong><em>and must</em></strong> attach a message using <em>-m</em> flag.
-However, without proper rules on <strong><em>how to write</em></strong> your commit messages,
-they will quickly become pretty random.</p>
-<p>And here come the Conventional Commits
-You can read about them <a href="https://www.conventionalcommits.org/en/v1.0.0/">here</a>.
-To put it shortly, it's a convention that tells you how to
-properly write commit messages</p>
-<p>Bad commit messages:</p>
-<ol>
-<li>small changes</li>
-<li>fixed the bug</li>
-<li>added styling</li>
-<li>commit commit</li>
-</ol>
-<p>Good commit messages:</p>
-<ol>
-<li>feat(footer): changed application footer</li>
-<li>fix(navigation): removed dead links from the navigation</li>
-<li>docs(src/components/CronPicker): added documentation for arguments</li>
-</ol>
-<h2 id="clear-and-intuitive-collaboration">Clear and Intuitive Collaboration</h2>
-<p>There are best practices on how to work
-on a project together.</p>
-<p>Imagine if everybody was using the same branch.
-You make changes, you commit, you push... and boom!
-You get a notification that your branches are <strong><em>divergent</em></strong>.
-What could happen:</p>
-<ol>
-<li>Last commit on <code>main</code> branch is <code>A</code></li>
-<li>You and Mateusz simultaneously start working on that branch</li>
-<li>Mateusz finishes first, he commits his changes as commit <code>B</code>
-and immediately pushes it to GitHub</li>
-<li>Remotely, <code>main</code> branch has a history of <code>A -&gt; B</code></li>
-<li>You finish your changes and commit them as commit <code>C</code></li>
-<li>Your local history of <code>main</code> looks like <code>A -&gt; C</code></li>
-<li>When you push it to GitHub, it gets confused on what happened:
-how to treat the fact that you dont have the <code>B</code> commit?</li>
-</ol>
-<p>Even when working in a pair, bad git practices can lead to
-serious consequences.
-So, people invented something which is called 
-<a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow</a>:
-a tool and a set of rules that tells you how to organize your git
-collaboration on a project.</p>
-<p>We won't use Gitflow, but we will have some rules
-on how we work with our repositories,
-so we won't have to resolve divergent branches and merge conflicts.</p>
-<h3 id="our-plan-of-work">Our plan of work</h3>
-<ol>
-<li>We need a feature. I, as a team leader, create an Issue on Github,
-assign some priority to this issue, and assign a person responsible for
-this issue.</li>
-<li>You, the person assigned to the issue, go to GitHub,
-click 'Create branch for the issue', git fetch &amp; git checkout to
-that branch locally, and start working on that feature on your
-separate branch</li>
-<li><strong><em>This is YOUR branch, and noone should modify it except
-of you!</em></strong> Only one person is working per branch.</li>
-<li>After you've done with your feature, you merge the <code>main</code> branch
-to your branch, and resolve conflicts</li>
-<li>After the conflicts are resolved, you create a <strong><em>Pull Request</em></strong> on GitHub</li>
-<li>I check the PR, and make a code review. You change the code if
-it doesn't meet the criteria</li>
-<li>When I assume that the code is good enough, I merge your PR to the <code>main</code> branch</li>
-<li><strong><em>You should NEVER modify the main branch, we are only merging to it.</em></strong>
-Want to add a feature? Create a separate Issue and a branch for that issue!</li>
-</ol>
+<p>For example, the <code>EventDto</code> class represents the structure of an event object, including its id, title, description, location, date, and associated users. The <code>users</code> property is transformed to exclude sensitive information such as passwords and friends list from the user objects.</p>
+<h3 id="api-layer">API Layer</h3>
+<p>The <code>API Layer</code> handles the communication between the client and the server. It uses DTOs to transfer data securely and efficiently, ensuring that sensitive information is not exposed. This layer processes incoming requests, applies business logic, and returns appropriate responses.</p>
+<ul>
+<li>Handles client-server communication</li>
+<li>Uses DTOs for secure data transfer</li>
+<li>Processes requests and applies business logic</li>
+<li>Returns appropriate responses</li>
+</ul>
+<h3 id="_1"></h3>
+<p>The architecture follows a clear separation between database entities and DTOs to ensure security and proper data encapsulation when sending responses through the API.</p>
+<h2 id="user-entity">User Entity</h2>
+<p>The <a href="UserEntity/"><code>UserEntity</code></a> is the core user model with database mappins using TypeORM decorators.</p>
+<h2 id="event-entity">Event Entity</h2>
+<p>The <a href="EventEntity/"><code>EventEntity</code></a> represents events in the system and maps to the events table in the database. It manages event information and participant relationships.</p>
+<h2 id="event-dto">Event DTO</h2>
+<p>The <a href="EventDTO/"><code>EventDto</code></a> is a Data Transfer Object that represents an event. It contains information about the event such as its ID, title, description, location, date, and associated users.</p>
+<h2 id="user-dto">User DTO</h2>
+<p>The <a href="UserDTO/"><code>UserDto</code></a> is a Data Transfer Object that represents a user. It contains information about the user such as their ID, nickname, first name, last name, email, friends, and events.</p>
+<h2 id="data-storage">Data Storage</h2>
+<ul>
+<li>Events and users are stored in the <em>PostgreSQL</em> database</li>
+<li>Uses <em>TypeORM</em> decorators for database mapping</li>
+<li>Enforces unique event titles and user emails to prevent duplicates</li>
+</ul>
+<h2 id="user-relationships">User Relationships</h2>
+<ul>
+<li>Maintains many-to-many relationship with events</li>
+<li>Bidirectional mapping with <em>EventEntity</em></li>
+<li>Allows tracking event participants and user events</li>
+</ul>
+<h2 id="event-relationships">Event Relationships</h2>
+<ul>
+<li>Each event can have multiple participants</li>
+<li>Maintains many-to-many relationship with users</li>
+<li>Uses join tables to manage event-user associations</li>
+<li>Allows querying events by participants and vice versa</li>
+<li>Ensures referential integrity between events and users</li>
+</ul>
+<h2 id="data-transfer">Data Transfer</h2>
+<ul>
+<li>API responses use <em>EventDto</em> and <em>UserDto</em></li>
+<li>Sensitive user data is filtered from participant lists</li>
+<li>Maintains clean data structure for frontend consumption</li>
+<li>Ensures secure and efficient data transfer between client and server</li>
+</ul>
 
 
 

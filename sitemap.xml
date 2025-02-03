@@ -2,22 +2,74 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://tracery-team.github.io/tracery-docs/</loc>
-         <lastmod>2025-02-02</lastmod>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/app-modules/</loc>
+         <lastmod>2025-02-03</lastmod>
     </url>
     <url>
          <loc>https://tracery-team.github.io/tracery-docs/backend/</loc>
-         <lastmod>2025-02-02</lastmod>
+         <lastmod>2025-02-03</lastmod>
     </url>
     <url>
          <loc>https://tracery-team.github.io/tracery-docs/code-style/</loc>
-         <lastmod>2025-02-02</lastmod>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/data/</loc>
+         <lastmod>2025-02-03</lastmod>
     </url>
     <url>
          <loc>https://tracery-team.github.io/tracery-docs/frontend/</loc>
-         <lastmod>2025-02-02</lastmod>
+         <lastmod>2025-02-03</lastmod>
     </url>
     <url>
          <loc>https://tracery-team.github.io/tracery-docs/git-and-github/</loc>
-         <lastmod>2025-02-02</lastmod>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/levenshtein/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/modules/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/setup/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/data/EventDTO/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/data/EventEntity/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/data/UserDTO/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/data/UserEntity/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/modules/AuthModule/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/modules/EventModule/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/modules/ProfileModule/</loc>
+         <lastmod>2025-02-03</lastmod>
+    </url>
+    <url>
+         <loc>https://tracery-team.github.io/tracery-docs/modules/UserModule/</loc>
+         <lastmod>2025-02-03</lastmod>
     </url>
 </urlset>
