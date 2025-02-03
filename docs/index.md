@@ -17,7 +17,7 @@ The documentation tries to addresses the following parts:
 1. [Project git and github details](git-and-github.md)
 2. [Application setup](setup.md)
 3. [Backend documentation](backend.md)
-4. [Frontend documentation](frontend.md)
+4. [Frontend documentation](Frontend/frontend.md)
 
 The information about application modules
 can be found [here](app-modules.md).
